@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate HTML, CSS, JS Project (TASK2)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Intermediate HTML, CSS, and JavaScript Project</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Contact Form -->
+        <form id="contactForm">
+            <h2>Contact Form</h2>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <span class="error" id="nameError"></span>
+
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <span class="error" id="emailError"></span>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Responsive Layout -->
+        <div class="layout">
+            <nav>
+                <h3>Navigation</h3>
+                <p>Home</p>
+                <p>About</p>
+                <p>Contact</p>
+            </nav>
+            <div class="content">
+                <h3>Content Area</h3>
+                <p>This section adapts using CSS Grid and media queries for responsiveness.</p>
+            </div>
+        </div>
+
+        <!-- To-do List -->
+        <div class="todo">
+            <h2>To-Do List</h2>
+            <input type="text" id="taskInput" placeholder="Add new task...">
+            <button onclick="addTask()">Add</button>
+            <ul id="taskList"></ul>
+        </div>
+
+    </div>
+</body>
+<script src="script.js" defer></script>
+
+</html>
